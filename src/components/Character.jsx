@@ -31,24 +31,24 @@ function Character(props) {
         margin-bottom: 20px;
         text-align: right;
       }
-      
+
       #symbol h1 {
         position: relative;
         text-align: left;
-        bottom: 100px; 
-        margin-left: 10px; 
+        bottom: 100px;
+        margin-left: 10px;
         text-shadow: 1px 1px 1px darkslategray;
       }
-      
+
       #charImage {
         text-align: center;
       }
-      
+
       #firstlogo {
         position: relative;
         margin-top: 5px;
       }
-      
+
     `}</style>
       <div id="symbol">
         {props.symbol}
@@ -58,7 +58,8 @@ function Character(props) {
       <h4>Series: <i>{props.series}</i></h4>
       <h4>Number: <i>{props.number}</i></h4>
       <h4>First Appearance: <i>{props.first}</i></h4>
-      <p>{props.bio}</p>  
+      <h4>{props.headgear}{props.outfit}</h4>
+      <p>{props.bio}</p>
     </div>
   );
 }
@@ -69,9 +70,12 @@ Character.propTypes = {
   number: PropTypes.string.isRequired,
   first: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  gameimage: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,
-  bio: PropTypes.string.isRequired
+  bio: PropTypes.string.isRequired,
+  //mii fighters only
+  type: PropTypes.string.isRequired,
+  headgear: PropTypes.string,
+  outfit: PropTypes.string
 };
 
 export default Character;

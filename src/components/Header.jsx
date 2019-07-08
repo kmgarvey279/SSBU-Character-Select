@@ -13,7 +13,7 @@ function Header(){
         background-color: gray;
         height: 25px;
       }
-      
+
       img#background {
 
         height: 200px;
@@ -22,7 +22,7 @@ function Header(){
         position: absolute;
         z-index: 0;
       }
-      
+
       #title {
         position: relative;
         z-index: 1;
@@ -32,7 +32,7 @@ function Header(){
       <img id="background" src={background}/>
       <div id="title"> <img src={title} weight="200" height="200"/></div>
       <div id="navbar">
-        <Link to="/">Home</Link> | <Link to="/characterlist">Characters</Link>
+        <Link to="/">Home</Link> | <Link to="/characterlist">Characters</Link> | <Link to="/newmii">Add a Custom Mii Fighter</Link>
       </div>
     </div>
   );
